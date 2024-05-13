@@ -1,4 +1,4 @@
-
+timing=0;
 
 //text box parameters;
 textbox_width=500;

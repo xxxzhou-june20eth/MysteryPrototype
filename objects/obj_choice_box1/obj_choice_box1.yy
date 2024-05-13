@@ -14,7 +14,10 @@
     "name":"chat boxes",
     "path":"folders/Objects/chat boxes.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chatboxes",
+    "path":"objects/obj_chatboxes/obj_chatboxes.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

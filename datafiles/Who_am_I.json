@@ -237,6 +237,13 @@
                                 }
                     ]
                 },
+                "obj_drawer_right3":{
+                    "lines":[
+                        {
+                            "text":"Nothing inside."
+                        }
+                    ]
+                },
                 "obj_drawer_right2":{
                     "lines":[
                         {
@@ -247,13 +254,6 @@
                             "text":"What time is it now?"
                         }
                     ]   
-                },
-                "obj_drawer_right3":{
-                    "lines":[
-                        {
-                            "text":"Nothing inside."
-                        }
-                    ]
                 }
             }
         }

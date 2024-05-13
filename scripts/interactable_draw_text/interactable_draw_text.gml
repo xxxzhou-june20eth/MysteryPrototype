@@ -1,12 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function interactable_draw_text(text_line,line_number){
+	obj_text_box_interactables.visible=true;
 	if (struct_exists(text_line[line_number],"text")){
 		obj_text_box_interactables.text=text_line[line_number].text;
 		obj_text_box_interactables.visible=true;	
 	}
 	obj_text_box_interactables.drawing=false;
-	if (struct_exists(text_line[line_number],"speaker")){
+	if (struct_exists(text_line[line_number],"speaker_sprite")){
 		obj_text_box_interactables.drawing=true;
 		obj_text_box_interactables.dsprite=sprite_index;
 	}

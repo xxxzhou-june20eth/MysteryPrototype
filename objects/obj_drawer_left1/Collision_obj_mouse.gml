@@ -1,4 +1,4 @@
 if (mouse_check_button_pressed(1)){
-	interactable_draw_text(text_line,line_number);
+	obj_text_box_interactables.text=text_line[0].text;
 }
 

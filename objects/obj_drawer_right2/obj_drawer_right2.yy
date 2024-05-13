@@ -13,7 +13,10 @@
     "name":"rm_bedroom",
     "path":"folders/Objects/rm_bedroom.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactables",
+    "path":"objects/obj_interactables/obj_interactables.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
