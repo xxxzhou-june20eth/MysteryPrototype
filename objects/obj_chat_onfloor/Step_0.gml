@@ -1,3 +1,8 @@
+
+if (line_number==array_length(text_line)){
+	visible=false;
+}
+
 if (line_number==array_length(text_line)){
 	instance_deactivate_layer("Instances");
 }

@@ -127,7 +127,8 @@
                         "speaker":"Me",
                         "text":"Seems like it's broken."
                     }
-                ],
+                ]
+            },
                 "obj_drawer_left1":{
                     "lines":[
                         {
@@ -252,4 +253,3 @@
             }
         }
     }
-}

@@ -9,8 +9,8 @@
   "name":"obj_door_back",
   "overriddenProperties":[],
   "parent":{
-    "name":"rm_kitchen",
-    "path":"folders/Objects/rm_kitchen.yy",
+    "name":"rm_bedroom",
+    "path":"folders/Objects/rm_bedroom.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_bedroom",
+  "%Name":"obj_drawer_right3",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_bedroom",
+  "name":"obj_drawer_right3",
   "overriddenProperties":[],
   "parent":{
     "name":"rm_bedroom",
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_r3",
+    "path":"sprites/spr_r3/spr_r3.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

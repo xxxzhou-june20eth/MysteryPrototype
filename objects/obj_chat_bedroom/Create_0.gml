@@ -1,6 +1,6 @@
-json_file=import_json("mystery.json",json_parse);
+json_file=import_json("Who am I.json",json_parse);
 bedroom=json_file.rm_bedroom;
-text_line=json_file.rm_bedroom.lines;
+text_line=bedroom.lines;
 
 line_number=0;
 
