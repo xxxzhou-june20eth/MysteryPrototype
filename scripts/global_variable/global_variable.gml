@@ -1,5 +1,5 @@
-global.has_apple=false;
-global.has_key=false;
-global.met_voice=false;
-global.has_fish=false;
-global.next=false;
+global.diary_read=false;
+global.left2=false;
+global.left3=false;
+global.right2=false;
+global.right1=false;

@@ -200,7 +200,7 @@
                     "lines":[
                         {
                             "text":"A teddy bear.",
-                            "lines":[
+                        },
                                 {
                                     "text":"A Teddy bear..."
                                 },
@@ -235,8 +235,6 @@
                                         }
                                     ]
                                 }
-                            ]
-                        }
                     ]
                 },
                 "obj_drawer_right2":{
@@ -249,6 +247,13 @@
                             "text":"What time is it now?"
                         }
                     ]   
+                },
+                "obj_drawer_right3":{
+                    "lines":[
+                        {
+                            "text":"Nothing inside."
+                        }
+                    ]
                 }
             }
         }
