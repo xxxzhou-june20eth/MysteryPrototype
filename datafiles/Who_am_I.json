@@ -1,0 +1,255 @@
+{
+    "rm_on_floor":{
+        "dev_note":"player waking up finding themselves on the floor",
+        "lines":[
+            {
+                "speaker":"Me",
+                "text":"What just happened..."
+            },
+            {
+                "speaker":"Me",
+                "text":"I remember I on my way to school... Where am I right now?"
+            },
+            {
+                "speaker":"Me",
+                "set_true":"awake",
+                "dev_note":"player sit up and look at their arms",
+                "text":"Remember your name?"
+            },
+            {
+                "speaker":"Me",
+                "text":"How ridiculous! Why wouldn't I know my own name?"
+            },
+            {
+                "speaker":"Me",
+                "type_in":"true",
+                "text":"My name is ___________."
+            },
+            {
+                "speaker":"???",
+                "text":"NO. It's not your name."
+            },
+            {
+                "speaker":"???",
+                "text":"Think about it. Who are you? Tell me the answer later."
+            },
+            {
+                "speaker":"Me",
+                "text":"This isn't my name?"
+            },
+            {
+                "speaker":"Me",
+                "text":"Then Who am I?"
+            },
+            {
+                "choices":[
+                    {
+                        "text":"Get up and look around"
+                    }
+                ]
+            }
+        ]
+    },
+    "rm_bedroom":{
+        "dev_note":"the player wake up finding themselves in a bedroom",
+        "lines":[
+            {
+                "speaker":"Me",
+                "text":"Hmm...I'm on the floor of a bedroom..."
+            }
+        ],
+        "interactables":{
+            "obj_diary":{
+                "set_true":"diary_read",
+                "lines":[
+                    {
+                        "speaker":"Me",
+                        "text":"A diary... Should I open it?"
+                    },
+                    {
+                        "choices":[
+                            {
+                                "text":"Open it",
+                                "set_state":"reading_diary",
+                                "lines":[
+                                    {
+                                        "text":"[First Page]:This is the secret diary of Tina. Anyone else shouldn't be reading it."
+                                    },
+                                    {
+                                        "text":"[Second Page]:2023/6/20 Sunday, Sunny ---- I hate Ted.",
+                                        "text2":"A different handwriting in red pen: Don't hate me Tina, I love you."
+                                    },
+                                    {
+                                        "text":"[Third Page]:2023/7/2 Friday, Rainy ---- I need to break up with him. He is so sick!",
+                                        "text2":"Red pen handwriting: NO, Babe. You could never break up with me."
+                                    },
+                                    {
+                                        "text":"[Forth Page]:2023/10/17 Monday, Sunny ---- Jackson is so smart and brave... I think I have a crush on him.",
+                                        "text2":"Red pen handwriting: Jackson..."
+                                    },
+                                    {
+                                        "text":"[Fifth Page]:2023/11/3 Saturday, Cloudy ---- Jackson's mom called me and said that Jackson is missing. What happened to him? What should I do?"
+                                    },
+                                    {
+                                        "text":"[Sixth Page]:2023/12/18 Tuesday, Rainy ---- Jackson is still missing. Ted came to me and ask me to turn back to him. I rejected. I will wait for Jackson.",
+                                        "text2":"Red pen handwriting: Why are you so obsessed with him? You belong to me."
+                                    },
+                                    {
+                                        "text":"[Pages tore]"
+                                    }
+                                ]
+                            },
+                            {
+                                "text":"save for later"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "obj_lamp":{
+                "lines":[
+                    {
+                        "text":"A simple lamp."
+                    },
+                    {
+                        "choices":[
+                            {
+                                "text":"Twist the switch",
+                                "lines":[
+                                    {
+                                        "text":"Couldn't change the lamp"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "speaker":"Me",
+                        "text":"Seems like it's broken."
+                    }
+                ],
+                "obj_drawer_left1":{
+                    "lines":[
+                        {
+                            "text":"Nothing Inside."
+                        }
+                    ]
+                },
+                "obj_drawer_left2":{
+                    "lines":[
+                        { 
+                            "if_true":"diary_read",
+                            "text":"Wanted ads for Jackson with handwriting in blue pen: I will found you, I promise.",
+                            "lines":[
+                                {
+                                    "speaker":"Me",
+                                    "text":"Where is Jackson right now?"
+                                }
+                            ]
+                        },
+                        {
+                            "if_false":"diary_read",
+                            "text":"Wanted ads for Jackson with handwriting in blue pen: I will found you, I promise.",
+                            "lines":[
+                                {
+                                    "if_true":"obj_drawer_left3",
+                                    "speaker":"Me",
+                                    "text":"Hmm... Jackson Again."
+                                },
+                                {
+                                    "if_false":"obj_drawer_left3",
+                                    "speaker":"Me",
+                                    "text":"I wonder who is Jackson. Is it me?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "obj_drawer_left3":{
+                    "lines":[
+                        {
+                            "if_true":"diary_read",
+                            "text":"A whole box of letters written from Jackson. Seems like they are all love letters in a relationship.",
+                            "lines":[
+                                {
+                                    "speaker":"Me",
+                                    "text":"Seems like Tina and Jackson really love each other."
+                                }
+                            ]
+                        },
+                        {
+                            "if_false":"diary_read",
+                            "text":"A whole box of letters written from Jackson. Seems like they are all love letters in a relationship.",
+                            "lines":[
+                                {
+                                    "if_true":"obj_drawer_left2",
+                                    "speaker":"Me",
+                                    "text":"Hmm... Jackson Again."
+                                },
+                                {
+                                    "if_false":"obj_drawer_left2",
+                                    "speaker":"Me",
+                                    "text":"I wonder who is Jackson. Is it me?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "obj_drawer_right1":{
+                    "lines":[
+                        {
+                            "text":"A teddy bear.",
+                            "lines":[
+                                {
+                                    "text":"A Teddy bear..."
+                                },
+                                {
+                                    "speaker":"Me",
+                                    "text":"I wonder if it is a gift from"
+                                },
+                                {
+                                    "choices":[
+                                        {
+                                            "if_true":"obj_drawer_left2",
+                                            "or_if_true":"obj_drawer_left3",
+                                            "or_if_true2":"diary_read",
+                                            "text":"Jackson.",
+                                            "lines":[
+                                                {
+                                                    "speaker":"Me",
+                                                    "text":"Her relationship with Jackson was really strong."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "if_true":"diary_read",
+                                            "or_if_true":"obj_drawer_right2",
+                                            "text":"Ted.",
+                                            "lines":[
+                                                {
+                                                    "speaker":"Me",
+                                                    "text":"Tho she hates Ted and broke up with him, I still think she might keep this teddy bear from Ted."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "obj_drawer_right2":{
+                    "lines":[
+                        {
+                            "text":"A sticky note saying 'Meet me in the grove at 6 PM if you want to find Jackson -- Ted'."
+                        },
+                        {
+                            "speaker":"Me",
+                            "text":"What time is it now?"
+                        }
+                    ]   
+                }
+            }
+        }
+    }
+}

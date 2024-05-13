@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_car",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_onfloor_hand",
+  "eventList":[],
   "managed":true,
-  "name":"obj_car",
+  "name":"obj_onfloor_hand",
   "overriddenProperties":[],
   "parent":{
-    "name":"rm_bedroom",
-    "path":"folders/Objects/rm_bedroom.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_car",
-    "path":"sprites/spr_car/spr_car.yy",
+    "name":"spr_arm",
+    "path":"sprites/spr_arm/spr_arm.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -7,4 +7,8 @@ if (mouse_check_button_pressed(1)){
 		obj_fridge.chosedb=true;
 		obj_fridge.chosed=0;
 	}
+	
+	if (instance_exists(obj_chat_onfloor)){
+		room_goto_next();
+	}
 }

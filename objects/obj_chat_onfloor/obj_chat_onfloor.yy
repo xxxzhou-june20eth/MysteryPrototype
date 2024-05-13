@@ -9,8 +9,8 @@
   "name":"obj_chat_onfloor",
   "overriddenProperties":[],
   "parent":{
-    "name":"rm_bedroom",
-    "path":"folders/Objects/rm_bedroom.yy",
+    "name":"rm_onfloor",
+    "path":"folders/Objects/rm_onfloor.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_manager",
