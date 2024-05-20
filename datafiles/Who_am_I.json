@@ -4,7 +4,7 @@
         "lines":[
             {
                 "speaker":"Me",
-                "text":"What just happened..."
+                "text":"What just happened... [Tap the chat box to continue]"
             },
             {
                 "speaker":"Me",
@@ -76,23 +76,28 @@
                                         "text":"[First Page]:This is the secret diary of Tina. Anyone else shouldn't be reading it."
                                     },
                                     {
-                                        "text":"[Second Page]:2023/6/20 Sunday, Sunny ---- I hate Ted.",
-                                        "text2":"A different handwriting in red pen: Don't hate me Tina, I love you."
+                                        "text":"[Second Page]:2023/6/20 Sunday, Sunny ----",
+                                        "text2":"I hate Ted.",
+                                        "text3":"A different handwriting in red pen: Don't hate me Tina, I love you."
                                     },
                                     {
-                                        "text":"[Third Page]:2023/7/2 Friday, Rainy ---- I need to break up with him. He is so sick!",
-                                        "text2":"Red pen handwriting: NO, Babe. You could never break up with me."
+                                        "text":"[Third Page]:2023/7/2 Friday, Rainy ----",
+                                        "text2":"I need to break up with him. He is so sick!",
+                                        "text3":"Red pen handwriting: NO, Babe. You could never break up with me."
                                     },
                                     {
-                                        "text":"[Forth Page]:2023/10/17 Monday, Sunny ---- Jackson is so smart and brave... I think I have a crush on him.",
-                                        "text2":"Red pen handwriting: Jackson..."
+                                        "text":"[Forth Page]:2023/10/17 Monday, Sunny ----",
+                                        "text2":"Jackson is so smart and brave... I think I have a crush on him.",
+                                        "text3":"Red pen handwriting: Jackson..."
                                     },
                                     {
-                                        "text":"[Fifth Page]:2023/11/3 Saturday, Cloudy ---- Jackson's mom called me and said that Jackson is missing. What happened to him? What should I do?"
+                                        "text":"[Fifth Page]:2023/11/3 Saturday, Cloudy ----",
+                                        "text2":"Jackson's mom called me and said that Jackson is missing. What happened to him? What should I do?"
                                     },
                                     {
-                                        "text":"[Sixth Page]:2023/12/18 Tuesday, Rainy ---- Jackson is still missing. Ted came to me and ask me to turn back to him. I rejected. I will wait for Jackson.",
-                                        "text2":"Red pen handwriting: Why are you so obsessed with him? You belong to me."
+                                        "text":"[Sixth Page]:2023/12/18 Tuesday, Rainy ----",
+                                        "text2":"Jackson is still missing. Ted came to me and ask me to turn back to him. I rejected. I will wait for Jackson.",
+                                        "text3":"Red pen handwriting: Why are you so obsessed with him? You belong to me."
                                     },
                                     {
                                         "text":"[Pages tore]"
@@ -199,7 +204,7 @@
                 "obj_drawer_right1":{
                     "lines":[
                         {
-                            "text":"A teddy bear.",
+                            "text":"A teddy bear."
                         },
                                 {
                                     "text":"A Teddy bear..."
@@ -254,6 +259,23 @@
                             "text":"What time is it now?"
                         }
                     ]   
+                },
+                "obj_red_pen":{
+                    "lines":[
+                        {
+                            "text":"A red pen"
+                        },
+                        {
+                            "if_true":"diary_read",
+                            "speaker":"Me",
+                            "text":"Is this the red pen used to write in the diary?"
+                        },
+                        {
+                            "if_false":"diary_read",
+                            "speaker":"Me",
+                            "text":"Is this the pen I use to write on my hand?"
+                        }
+                    ]
                 }
             }
         }

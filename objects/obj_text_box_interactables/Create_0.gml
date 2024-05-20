@@ -14,3 +14,5 @@ setup=false;
 line_number=0;
 
 text="";
+text2=""
+text3="";
