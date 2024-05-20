@@ -119,14 +119,12 @@
                     {
                         "choices":[
                             {
-                                "text":"Twist the switch",
-                                "lines":[
-                                    {
-                                        "text":"Couldn't change the lamp"
-                                    }
-                                ]
+                                "text":"Twist the switch"
                             }
                         ]
+                    },
+                    {
+                        "text":"Couldn't change the lamp"
                     },
                     {
                         "speaker":"Me",
@@ -276,7 +274,63 @@
                             "text":"Is this the pen I use to write on my hand?"
                         }
                     ]
+                },
+                "obj_paper":{
+                    "lines":[
+                        {
+                            "text":"Black pen hand writing: Finding Jackson",
+                            "text2":"Who kidnapped Jackson? Where is he? Call the police to hide...",
+                            "text3":"Red pen handwriting: You couldn't catch me babe."
+                        }
+                    ]
+                },
+                "obj_door":{
+                    "lines":[
+                        {
+                            "speaker":"???",
+                            "text":"Do you know who are you now?"
+                        },
+                        {
+                            "choices":[
+                                {
+                                    "text":"Jackson",
+                                    "lines":[
+                                        {
+                                            "speaker":"???",
+                                            "text":"No, you are not. Think about it later."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text":"Ted",
+                                    "room_goto":"rm_ending"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            }
         }
+    },
+    "rm_ending":{
+        "lines":[
+            {
+                "text":"Yes, You are Ted."
+            },
+            {
+                "text":"Due to your phycho love, you kidnapped Jackson so that Tina can go back to you."
+            },
+            {
+                "text":"But Jackson escaped and contacted Tina"
+            },
+            {
+                "text":"They set up a trap for you."
+            },
+            {
+                "text":"You lost your memory so they set up this room to let you remember who you are."
+            },
+            {
+                "text":"You will be arrested by the police."
+            }
+        ]
     }
+}

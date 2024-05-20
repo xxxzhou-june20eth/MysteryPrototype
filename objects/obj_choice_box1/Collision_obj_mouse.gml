@@ -2,7 +2,8 @@ if (mouse_check_button_pressed(1)){
 	if (instance_exists(obj_drawer_right1)){
 		if (obj_drawer_right1.choosing){
 			obj_drawer_right1.chosed=0;
-			obj_drawer_right1.next=true;
+			obj_drawer_right1.line_number=3;
+			obj_drawer_right1.choosing=false;
 			obj_mouse.choosing=false;
 			obj_text_box_interactables.text=obj_drawer_right1.text_line[3].choices[0].lines[0].text;
 		}
@@ -18,7 +19,14 @@ if (mouse_check_button_pressed(1)){
 		else if (obj_lamp.choosing){
 			obj_lamp.choosing=false;
 			obj_mouse.choosing=false;
-			obj_lamp.choosing+=1;
+			obj_text_box_interactables.text=obj_lamp.text_line[2].text;
+			obj_lamp.line_number+=1;
+		}
+		else if (obj_door.choosing){
+			obj_door.choosing=false;
+			obj_mouse.choosing=false;
+			obj_text_box_interactables.text=obj_door.text_line[obj_door.line_number].choices[0].lines[0].speaker;
+			obj_text_box_interactables.text2=obj_door.text_line[obj_door.line_number].choices[0].lines[0].text;
 		}
 	}
 	if (instance_exists(obj_chat_onfloor)){

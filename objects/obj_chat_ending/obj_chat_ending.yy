@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_door_back",
+  "%Name":"obj_chat_ending",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_door_back",
+  "name":"obj_chat_ending",
   "overriddenProperties":[],
   "parent":{
-    "name":"rm_bedroom",
-    "path":"folders/Objects/rm_bedroom.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chat_manager",
+    "path":"objects/obj_chat_manager/obj_chat_manager.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_door",
-    "path":"sprites/spr_door/spr_door.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
